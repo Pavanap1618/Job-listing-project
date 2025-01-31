@@ -1,0 +1,204 @@
+/* Hero Container */
+.hero-container {
+    position: relative;
+    background-image: url("https://html.themewant.com/jobpath/template/assets/img/home-1/banner/header__background.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 190px 90px;
+   
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: #f8f9fa;
+    position: relative;
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 50%;
+   
+}
+
+
+
+
+
+.htext {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.jpath {
+    color: #2c28a7;
+}
+
+.hdesc {
+    font-size: 1.3rem;
+}
+
+
+
+.hero-text p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.search-box select,
+.search-box button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.search-box button {
+    background: #3928a7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+    background: #213b88;
+}
+
+/* Hero Image */
+.hero-image {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    height: auto;
+    width: 38%;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    position: absolute;
+    top: 20%;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.icon1, .icon2 {
+    height: 62px;
+    width: 62px;
+    border-radius: 6px;
+    background-color: var(--rts-white);
+    font-size: 30px;
+    display: grid;
+    place-items: center;
+    color: #7763e5;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.icon1 {
+    bottom: 150px;
+    left: 5%;
+}
+
+.icon2 {
+    bottom: 160px;
+    left: 450px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-container {
+        padding: 150px 40px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-image {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        top: 0;
+        right: 0;
+    }
+
+    .social-icons {
+        left: 20px;
+        top: auto;
+        gap: 20px;
+    }
+
+    .icon1, .icon2 {
+        bottom: 100px;
+        left: 10%;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .htext {
+        font-size: 3.5rem;
+    }
+
+    .hdesc {
+        font-size: 1.1rem;
+    }
+
+    .search-box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .search-box select,
+    .search-box button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        padding: 100px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .htext {
+        font-size: 3rem;
+    }
+
+    .search-box select,
+    .search-box button {
+        font-size: 0.9rem;
+    }
+}

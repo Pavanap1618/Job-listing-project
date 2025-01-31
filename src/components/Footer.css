@@ -1,0 +1,156 @@
+.footer {
+  background-color: #0f2a3e;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-section h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #4caf50;
+}
+
+.social {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+}
+
+.footer-input {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.emails {
+  height: 45px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.signup-btn {
+  height: 45px;
+  width: 50%;
+  padding: 0 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #3e8e41;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .footer-input {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .emails {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .signup-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer-section h3 {
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
